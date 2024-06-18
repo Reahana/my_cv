@@ -10,46 +10,47 @@
                     <form class="form-horizontal" action="{{route('user.new')}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="row mb-3">
-                            <label for="inputEmail3" class="col-3 col-form-label">User Name</label>
+                            <label for="inputEmail3" class="col-3 col-form-label">Position Name :</label>
                             <div class="col-9">
-                                <input type="text" class="form-control" name="name" id="inputEmail3" placeholder="User Name"/>
+                                <input type="text" class="form-control" name="position" id="inputEmail3" placeholder="Position Name"/>
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="inputEmail31" class="col-3 col-form-label">User Email</label>
+                            <label for="inputEmail31" class="col-3 col-form-label">Organization Name :</label>
                             <div class="col-9">
-                                <input type="email" class="form-control" name="email" id="inputEmail31" placeholder="User Email"/>
+                                <input type="text" class="form-control" name="organization" id="inputEmail31" placeholder="Organization Name"/>
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="inputEmail32" class="col-3 col-form-label">User Password</label>
+                            <label for="inputEmail32" class="col-3 col-form-label">Department :</label>
                             <div class="col-9">
-                                <input type="password" class="form-control" name="password" id="inputEmail32" placeholder="User Password"/>
+                                <input type="text" class="form-control" name="department" id="inputEmail32" placeholder="Department"/>
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="inputEmail33" class="col-3 col-form-label">User Mobile</label>
+                            <label for="inputEmail33" class="col-3 col-form-label">Responsibilities :</label>
                             <div class="col-9">
                                 <input type="number" class="form-control" name="mobile" id="inputEmail33" placeholder="User Mobile"/>
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="inputEmail34" class="col-3 col-form-label">User Image</label>
+                            <label for="inputEmail34" class="col-3 col-form-label">Starting Date :</label>
                             <div class="col-9">
-                                <input type="file" class="form-control" name="image" id="inputEmail34" placeholder="User Image"/>
+                                <input type="date" class="form-control" name="starting" id="inputEmail3" placeholder="Starting Date"/>
                             </div>
                         </div>
+
                         <div class="row mb-3">
-                            <label for="inputEmail32" class="col-3">User Type</label>
+                            <label for="inputEmail34" class="col-3 col-form-label">Ending Date :</label>
                             <div class="col-9">
-                                <label><input type="radio" name="user_type" value="1"/> Admin</label>
-                                <label><input type="radio" name="user_type" value="2"/> Reporter</label>
+                                <input type="date" class="form-control" name="ending" id="inputEmail3" placeholder="Ending Date"/>
                             </div>
                         </div>
-                        
+
+
                         <div class="justify-content-end row">
                             <div class="col-9">
-                                <button type="submit" class="btn btn-info">Create New User</button>
+                                <button type="submit" class="btn btn-info">Create New Employment History</button>
                             </div>
                         </div>
                     </form>

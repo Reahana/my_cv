@@ -6,7 +6,9 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
+
 use App\Http\Controllers\CVController;
+use App\Http\Controllers\EmploymentHistoryController;
 
 use App\Models\RoleRoute;
 
@@ -57,4 +59,8 @@ Route::middleware([ 'auth:sanctum',  config('jetstream.auth_session'), 'verified
     Route::get('/user/edit/{id}', [UserController::class, 'edit'])->name('user.edit');
     Route::post('/user/update/{id}', [UserController::class, 'update'])->name('user.update');
     Route::get('/user/delete/{id}', [UserController::class, 'delete'])->name('user.delete');
+
+    Route::get('/employment-history/add', [EmploymentHistoryController::class, 'index'])->name('employment.add');
+
+
 });
