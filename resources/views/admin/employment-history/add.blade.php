@@ -7,8 +7,14 @@
                 <div class="card-body">
                     <h4 class="header-title">Add Employment History form</h4>
                     <p class="text-muted font-14">{{Session::get('message')}}</p>
-                    <form class="form-horizontal" action="{{route('user.new')}}" method="POST" enctype="multipart/form-data">
+                    <form class="form-horizontal" action="{{route('employment.new')}}" method="POST" enctype="multipart/form-data">
                         @csrf
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-3 col-form-label">Employment History ID :</label>
+                            <div class="col-9">
+                                <input type="number" class="form-control" name="EH_id" id="inputEmail3" placeholder="Employment History ID"/>
+                            </div>
+                        </div>
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-3 col-form-label">Position Name :</label>
                             <div class="col-9">
@@ -30,7 +36,8 @@
                         <div class="row mb-3">
                             <label for="inputEmail33" class="col-3 col-form-label">Responsibilities :</label>
                             <div class="col-9">
-                                <input type="number" class="form-control" name="mobile" id="inputEmail33" placeholder="User Mobile"/>
+                                <textarea class="form-control" name="responsibilities" id="inputEmail33" cols="50" rows="10" placeholder="Responsibilities"></textarea>
+
                             </div>
                         </div>
                         <div class="row mb-3">

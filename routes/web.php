@@ -61,6 +61,6 @@ Route::middleware([ 'auth:sanctum',  config('jetstream.auth_session'), 'verified
     Route::get('/user/delete/{id}', [UserController::class, 'delete'])->name('user.delete');
 
     Route::get('/employment-history/add', [EmploymentHistoryController::class, 'index'])->name('employment.add');
-
+    Route::post('/employment-history/new', [EmploymentHistoryController::class, 'create'])->name('employment.new');
 
 });
