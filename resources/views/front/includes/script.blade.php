@@ -1,0 +1,1 @@
+<script src="{{asset('/')}}front/js/bootstrap.bundle.min.js"></script>

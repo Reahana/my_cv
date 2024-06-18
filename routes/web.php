@@ -6,6 +6,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CVController;
 
 use App\Models\RoleRoute;
 
@@ -29,7 +30,8 @@ function getRoleName($routeName)
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+//Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [CVController::class, 'index'])->name('/');
 
 Route::get('/post/add', [PostController::class, 'index'])->name('post.add')->middleware('roles');
 Route::post('/post/new', [PostController::class, 'create'])->name('post.new');
