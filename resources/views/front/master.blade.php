@@ -5,22 +5,24 @@
     @include('front.includes.style')
     <title>CV</title>
 </head>
-<body class="">
+<body class="p-2">
 
-    <div class="wrapper bg-white ">
+    <div class="wrapper bg-white p-5">
 
         <section>AMANDA REAHANA GOMES</section>
         <section>Objectives:  </section>
         <section>Projects</section>
         <section>Soecial Qualification</section>
-       <section>
+       <section class="py-3">
            @include('front.sections.employment-history')
        </section>
         <section>
             @include('front.sections.academic-qualification')
         </section>
         <section>Awards/Achievements: </section>
-        <section>Training Summary:  </section>
+        <section>
+            @include('front.sections.training-summary')
+        </section>
         <section>Languages:</section>
         <section>Volunteer Experiences:  </section>
         <section>Personal Details:</section>

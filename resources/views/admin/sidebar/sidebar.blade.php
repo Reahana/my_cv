@@ -112,6 +112,25 @@
             </li>
 
             <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarEmail2" aria-expanded="false" aria-controls="sidebarEmail"
+                   class="side-nav-link">
+                    <i class="uil-envelope"></i>
+                    <span> Training Summary  </span>
+                    <span class="menu-arrow"> </span>
+                </a>
+                <div class="collapse" id="sidebarEmail2">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('training.add')}}">Add Training   </a>
+                        </li>
+                        <li>
+                            <a href="apps-email-read.html">Manage Employment </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="side-nav-item">
                 <a href="apps-social-feed.html" class="side-nav-link">
                     <i class="uil-rss"></i>
                     <span> Social Feed </span>

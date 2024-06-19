@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\AcademicQualification;
 use App\Models\EmploymentHistory;
+use App\Models\TrainingSummary;
 use Illuminate\Http\Request;
 
 class CVController extends Controller
@@ -12,8 +13,8 @@ class CVController extends Controller
 
         return view('front.master',[
             'employments' => EmploymentHistory::orderBy('id')->get(),
-            'academics' => AcademicQualification::orderBy('id', 'DESC')->get()
-
+            'academics' => AcademicQualification::orderBy('id', 'DESC')->get(),
+            'trainings' => TrainingSummary::orderBy('id', 'DESC')->get(),
         ]);
     }
 }
