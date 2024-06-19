@@ -9,6 +9,7 @@ use App\Http\Controllers\UserController;
 
 use App\Http\Controllers\CVController;
 use App\Http\Controllers\EmploymentHistoryController;
+use App\Http\Controllers\AcademicQualificationController;
 
 use App\Models\RoleRoute;
 
@@ -62,5 +63,8 @@ Route::middleware([ 'auth:sanctum',  config('jetstream.auth_session'), 'verified
 
     Route::get('/employment-history/add', [EmploymentHistoryController::class, 'index'])->name('employment.add');
     Route::post('/employment-history/new', [EmploymentHistoryController::class, 'create'])->name('employment.new');
+
+    Route::get('/academic-qualification/add', [AcademicQualificationController::class, 'index'])->name('academic.add');
+    Route::post('/academic-qualification/new', [AcademicQualificationController::class, 'create'])->name('academic.new');
 
 });
