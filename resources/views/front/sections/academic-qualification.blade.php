@@ -1,4 +1,4 @@
-<h3 class="bg-light">Academic Qualification:</h3>
+<h3 class="bg-light text-decoration-underline">Academic Qualification:</h3>
 <table class="table table-bordered text-center">
     <thead class="fw-bold">
     <tr>

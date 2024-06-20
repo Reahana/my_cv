@@ -1,6 +1,6 @@
-<h3 class="bg-light">Employment History</h3>
+<h3 class="bg-light text-decoration-underline">Employment History</h3>
     @foreach($employments as $employment)
-        <h5><span class="fs-4">{{$employment->position}}</span>
+        <h5><span class="fs-4">{{$loop->iteration}}. {{$employment->position}}</span>
             ({{$employment->starting}} to {{$employment->ending}} )
         </h5>
         <h5><u>{{$employment->organization}}</u></h5>

@@ -1,4 +1,4 @@
-<h3 class="bg-light">Training Summary:</h3>
+<h3 class="bg-light text-decoration-underline">Training Summary:</h3>
 <table class="table table-bordered text-center">
     <thead class="fw-bold">
     <tr>
