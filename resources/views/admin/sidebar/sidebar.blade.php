@@ -77,10 +77,86 @@
                 <a data-bs-toggle="collapse" href="#sidebarEmail" aria-expanded="false" aria-controls="sidebarEmail"
                    class="side-nav-link">
                     <i class="uil-envelope"></i>
-                    <span> Employment History </span>
+                    <span> Personal Details </span>
                     <span class="menu-arrow"></span>
                 </a>
                 <div class="collapse" id="sidebarEmail">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('employment.add')}}">Add Projects  </a>
+                        </li>
+                        <li>
+                            <a href="apps-email-read.html">Manage Projects </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarEmail1" aria-expanded="false" aria-controls="sidebarEmail"
+                   class="side-nav-link">
+                    <i class="uil-envelope"></i>
+                    <span> Objectives </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarEmail1">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('employment.add')}}">Add Projects  </a>
+                        </li>
+                        <li>
+                            <a href="apps-email-read.html">Manage Projects </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarEmail2" aria-expanded="false" aria-controls="sidebarEmail"
+                   class="side-nav-link">
+                    <i class="uil-envelope"></i>
+                    <span> Projects </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarEmail2">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('employment.add')}}">Add Projects  </a>
+                        </li>
+                        <li>
+                            <a href="apps-email-read.html">Manage Projects </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarEmail3" aria-expanded="false" aria-controls="sidebarEmail"
+                   class="side-nav-link">
+                    <i class="uil-envelope"></i>
+                    <span> Special Qualification </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarEmail3">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('employment.add')}}">Add Special  </a>
+                        </li>
+                        <li>
+                            <a href="apps-email-read.html">Manage Projects </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarEmail4" aria-expanded="false" aria-controls="sidebarEmail"
+                   class="side-nav-link">
+                    <i class="uil-envelope"></i>
+                    <span> Employment History </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarEmail4">
                     <ul class="side-nav-second-level">
                         <li>
                             <a href="{{route('employment.add')}}">Add Employment  </a>
@@ -93,13 +169,13 @@
             </li>
 
             <li class="side-nav-item">
-                <a data-bs-toggle="collapse" href="#sidebarEmail1" aria-expanded="false" aria-controls="sidebarEmail"
+                <a data-bs-toggle="collapse" href="#sidebarEmail5" aria-expanded="false" aria-controls="sidebarEmail"
                    class="side-nav-link">
                     <i class="uil-envelope"></i>
                     <span> Academic Qualification  </span>
                     <span class="menu-arrow"> </span>
                 </a>
-                <div class="collapse" id="sidebarEmail1">
+                <div class="collapse" id="sidebarEmail5">
                     <ul class="side-nav-second-level">
                         <li>
                             <a href="{{route('academic.add')}}">Add Academic   </a>
@@ -112,13 +188,32 @@
             </li>
 
             <li class="side-nav-item">
-                <a data-bs-toggle="collapse" href="#sidebarEmail2" aria-expanded="false" aria-controls="sidebarEmail"
+                <a data-bs-toggle="collapse" href="#sidebarEmail6" aria-expanded="false" aria-controls="sidebarEmail"
+                   class="side-nav-link">
+                    <i class="uil-envelope"></i>
+                    <span> Awards  </span>
+                    <span class="menu-arrow"> </span>
+                </a>
+                <div class="collapse" id="sidebarEmail6">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('academic.add')}}">Add Academic   </a>
+                        </li>
+                        <li>
+                            <a href="apps-email-read.html">Manage Employment </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarEmail7" aria-expanded="false" aria-controls="sidebarEmail"
                    class="side-nav-link">
                     <i class="uil-envelope"></i>
                     <span> Training Summary  </span>
                     <span class="menu-arrow"> </span>
                 </a>
-                <div class="collapse" id="sidebarEmail2">
+                <div class="collapse" id="sidebarEmail7">
                     <ul class="side-nav-second-level">
                         <li>
                             <a href="{{route('training.add')}}">Add Training   </a>
@@ -131,13 +226,13 @@
             </li>
 
             <li class="side-nav-item">
-                <a data-bs-toggle="collapse" href="#sidebarEmail3" aria-expanded="false" aria-controls="sidebarEmail"
+                <a data-bs-toggle="collapse" href="#sidebarEmail8" aria-expanded="false" aria-controls="sidebarEmail"
                    class="side-nav-link">
                     <i class="uil-envelope"></i>
                     <span> Languages  </span>
                     <span class="menu-arrow"> </span>
                 </a>
-                <div class="collapse" id="sidebarEmail3">
+                <div class="collapse" id="sidebarEmail8">
                     <ul class="side-nav-second-level">
                         <li>
                             <a href="{{route('languages.add')}}">Add Languages   </a>
@@ -150,11 +245,44 @@
             </li>
 
             <li class="side-nav-item">
-                <a href="apps-social-feed.html" class="side-nav-link">
-                    <i class="uil-rss"></i>
-                    <span> Social Feed </span>
+                <a data-bs-toggle="collapse" href="#sidebarEmail9" aria-expanded="false" aria-controls="sidebarEmail"
+                   class="side-nav-link">
+                    <i class="uil-envelope"></i>
+                    <span> Volunteer Experiences  </span>
+                    <span class="menu-arrow"> </span>
                 </a>
+                <div class="collapse" id="sidebarEmail9">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('languages.add')}}">Add Languages   </a>
+                        </li>
+                        <li>
+                            <a href="apps-email-read.html">Manage Employment </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
+
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarEmail10" aria-expanded="false" aria-controls="sidebarEmail"
+                   class="side-nav-link">
+                    <i class="uil-envelope"></i>
+                    <span> Reference </span>
+                    <span class="menu-arrow"> </span>
+                </a>
+                <div class="collapse" id="sidebarEmail10">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('languages.add')}}">Add Languages   </a>
+                        </li>
+                        <li>
+                            <a href="apps-email-read.html">Manage Employment </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+
 
 
 
