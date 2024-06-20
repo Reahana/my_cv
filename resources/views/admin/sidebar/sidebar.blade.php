@@ -131,6 +131,25 @@
             </li>
 
             <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarEmail3" aria-expanded="false" aria-controls="sidebarEmail"
+                   class="side-nav-link">
+                    <i class="uil-envelope"></i>
+                    <span> Languages  </span>
+                    <span class="menu-arrow"> </span>
+                </a>
+                <div class="collapse" id="sidebarEmail3">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('languages.add')}}">Add Languages   </a>
+                        </li>
+                        <li>
+                            <a href="apps-email-read.html">Manage Employment </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="side-nav-item">
                 <a href="apps-social-feed.html" class="side-nav-link">
                     <i class="uil-rss"></i>
                     <span> Social Feed </span>

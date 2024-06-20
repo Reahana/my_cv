@@ -23,7 +23,9 @@
         <section>
             @include('front.sections.training-summary')
         </section>
-        <section>Languages:</section>
+        <section>
+            @include('front.sections.languages')
+        </section>
         <section>Volunteer Experiences:  </section>
         <section>Personal Details:</section>
         <section>Reference:</section>
