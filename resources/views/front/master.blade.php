@@ -9,7 +9,9 @@
 
     <div class="wrapper bg-white p-5">
 
-        <section>AMANDA REAHANA GOMES</section>
+        <section>
+            @include('front.sections.contact')
+        </section>
         <section>
             @include('front.sections.objectives')
         </section>
@@ -37,7 +39,9 @@
         <section>
             @include('front.sections.volunteer-experiences')
         </section>
-        <section>Personal Details:</section>
+        <section>
+            @include('front.sections.personal-details')
+        </section>
         <section>
             @include('front.sections.reference')
         </section>
