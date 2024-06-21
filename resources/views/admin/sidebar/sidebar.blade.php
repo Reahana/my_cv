@@ -273,10 +273,10 @@
                 <div class="collapse" id="sidebarEmail10">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="{{route('languages.add')}}">Add Languages   </a>
+                            <a href="{{route('reference.add')}}">Add Reference   </a>
                         </li>
                         <li>
-                            <a href="apps-email-read.html">Manage Employment </a>
+                            <a href="apps-email-read.html">Manage Reference </a>
                         </li>
                     </ul>
                 </div>

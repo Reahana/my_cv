@@ -14,6 +14,7 @@ use App\Http\Controllers\TrainingSummaryController;
 use App\Http\Controllers\LanguagesController;
 use App\Http\Controllers\ObjectivesController;
 use App\Http\Controllers\AwardsController;
+use App\Http\Controllers\ReferenceController;
 
 use App\Models\RoleRoute;
 
@@ -96,4 +97,6 @@ Route::middleware([ 'auth:sanctum',  config('jetstream.auth_session'), 'verified
 // Volunteer Experiences
 //Personal Details
 //Reference
+    Route::get('/reference/add', [ReferenceController::class, 'index'])->name('reference.add');
+    Route::post('/reference/new', [ReferenceController::class, 'create'])->name('reference.new');
 });
