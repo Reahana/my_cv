@@ -64,10 +64,16 @@ Route::middleware([ 'auth:sanctum',  config('jetstream.auth_session'), 'verified
     Route::post('/user/update/{id}', [UserController::class, 'update'])->name('user.update');
     Route::get('/user/delete/{id}', [UserController::class, 'delete'])->name('user.delete');
 
+
+//    Career Objectives
     Route::get('/objectives/add', [ObjectivesController::class, 'index'])->name('objectives.add');
     Route::post('/objectives/new', [ObjectivesController::class, 'create'])->name('objectives.new');
 
+//    Some of My Projects
 
+//Special Qualification
+
+//Employment History
     Route::get('/employment-history/add', [EmploymentHistoryController::class, 'index'])->name('employment.add');
     Route::post('/employment-history/new', [EmploymentHistoryController::class, 'create'])->name('employment.new');
 

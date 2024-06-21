@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Objective;
 use Illuminate\Http\Request;
 
 class ObjectivesController extends Controller
@@ -12,7 +13,7 @@ class ObjectivesController extends Controller
     }
     public function create(Request $request)
     {
-        $this->objectives = Language::newLanguage($request);
+        $this->objectives = Objective::newObjective($request);
         return redirect('/objectives/add')->with('message', 'Objectives info create successfully.');
     }
 }
