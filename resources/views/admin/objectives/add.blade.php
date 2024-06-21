@@ -29,7 +29,7 @@
 
                         <div class="justify-content-end row">
                             <div class="col-9">
-                                <button type="submit" class="btn btn-info">Create New Training Summary</button>
+                                <button type="submit" class="btn btn-info">Create New Career Objectives</button>
                             </div>
                         </div>
                     </form>

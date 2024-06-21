@@ -2,7 +2,7 @@
 <table class="table table-bordered text-center">
     <thead class="fw-bold">
     <tr>
-        <td>Sl No</td>
+        <td>Sl</td>
         <td>Topic</td>
         <td>Institute</td>
         <td>Duration</td>
