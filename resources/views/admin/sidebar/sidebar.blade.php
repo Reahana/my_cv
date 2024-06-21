@@ -102,10 +102,10 @@
                 <div class="collapse" id="sidebarEmail1">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="{{route('employment.add')}}">Add Projects  </a>
+                            <a href="{{route('objectives.add')}}">Add Objectives  </a>
                         </li>
                         <li>
-                            <a href="apps-email-read.html">Manage Projects </a>
+                            <a href="apps-email-read.html">Manage Objectives </a>
                         </li>
                     </ul>
                 </div>

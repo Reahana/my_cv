@@ -12,6 +12,7 @@ use App\Http\Controllers\EmploymentHistoryController;
 use App\Http\Controllers\AcademicQualificationController;
 use App\Http\Controllers\TrainingSummaryController;
 use App\Http\Controllers\LanguagesController;
+use App\Http\Controllers\ObjectivesController;
 
 use App\Models\RoleRoute;
 
@@ -62,6 +63,10 @@ Route::middleware([ 'auth:sanctum',  config('jetstream.auth_session'), 'verified
     Route::get('/user/edit/{id}', [UserController::class, 'edit'])->name('user.edit');
     Route::post('/user/update/{id}', [UserController::class, 'update'])->name('user.update');
     Route::get('/user/delete/{id}', [UserController::class, 'delete'])->name('user.delete');
+
+    Route::get('/objectives/add', [ObjectivesController::class, 'index'])->name('objectives.add');
+    Route::post('/objectives/new', [ObjectivesController::class, 'create'])->name('objectives.new');
+
 
     Route::get('/employment-history/add', [EmploymentHistoryController::class, 'index'])->name('employment.add');
     Route::post('/employment-history/new', [EmploymentHistoryController::class, 'create'])->name('employment.new');
