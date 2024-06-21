@@ -13,6 +13,7 @@ use App\Http\Controllers\AcademicQualificationController;
 use App\Http\Controllers\TrainingSummaryController;
 use App\Http\Controllers\LanguagesController;
 use App\Http\Controllers\ObjectivesController;
+use App\Http\Controllers\AwardsController;
 
 use App\Models\RoleRoute;
 
@@ -77,13 +78,22 @@ Route::middleware([ 'auth:sanctum',  config('jetstream.auth_session'), 'verified
     Route::get('/employment-history/add', [EmploymentHistoryController::class, 'index'])->name('employment.add');
     Route::post('/employment-history/new', [EmploymentHistoryController::class, 'create'])->name('employment.new');
 
+    //Academic Qualification:
     Route::get('/academic-qualification/add', [AcademicQualificationController::class, 'index'])->name('academic.add');
     Route::post('/academic-qualification/new', [AcademicQualificationController::class, 'create'])->name('academic.new');
 
+    //Awards/Achievements
+    Route::get('/awards/add', [AwardsController::class, 'index'])->name('awards.add');
+    Route::post('/awards/new', [AwardsController::class, 'create'])->name('awards.new');
+
+//Training Summary
     Route::get('/training-summary/add', [TrainingSummaryController::class, 'index'])->name('training.add');
     Route::post('/training-summary/new', [TrainingSummaryController::class, 'create'])->name('training.new');
 
+    //Languages:
     Route::get('/languages/add', [LanguagesController::class, 'index'])->name('languages.add');
     Route::post('/languages/new', [LanguagesController::class, 'create'])->name('languages.new');
-
+// Volunteer Experiences
+//Personal Details
+//Reference
 });

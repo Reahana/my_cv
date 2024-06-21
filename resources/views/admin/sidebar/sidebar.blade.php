@@ -197,7 +197,7 @@
                 <div class="collapse" id="sidebarEmail6">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="{{route('academic.add')}}">Add Academic   </a>
+                            <a href="{{route('awards.add')}}">Add Awards   </a>
                         </li>
                         <li>
                             <a href="apps-email-read.html">Manage Employment </a>
