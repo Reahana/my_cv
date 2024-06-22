@@ -7,6 +7,7 @@ use App\Models\Awards;
 use App\Models\EmploymentHistory;
 use App\Models\Language;
 use App\Models\Objective;
+use App\Models\Reference;
 use App\Models\TrainingSummary;
 use Illuminate\Http\Request;
 
@@ -21,6 +22,7 @@ class CVController extends Controller
             'languages'=> Language::orderBy('id')->get(),
             'objectives'=> Objective::orderBy('id')->get(),
             'awards'=>Awards::orderBy('id')->get(),
+            'references'=>Reference::orderBy('id')->get(),
         ]);
     }
 }
