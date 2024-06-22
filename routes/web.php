@@ -15,6 +15,7 @@ use App\Http\Controllers\LanguagesController;
 use App\Http\Controllers\ObjectivesController;
 use App\Http\Controllers\AwardsController;
 use App\Http\Controllers\ReferenceController;
+use App\Http\Controllers\VolunteerExperiencesController;
 
 use App\Models\RoleRoute;
 
@@ -67,6 +68,9 @@ Route::middleware([ 'auth:sanctum',  config('jetstream.auth_session'), 'verified
     Route::get('/user/delete/{id}', [UserController::class, 'delete'])->name('user.delete');
 
 
+    //Personal Details
+
+
 //    Career Objectives
     Route::get('/objectives/add', [ObjectivesController::class, 'index'])->name('objectives.add');
     Route::post('/objectives/new', [ObjectivesController::class, 'create'])->name('objectives.new');
@@ -94,8 +98,11 @@ Route::middleware([ 'auth:sanctum',  config('jetstream.auth_session'), 'verified
     //Languages:
     Route::get('/languages/add', [LanguagesController::class, 'index'])->name('languages.add');
     Route::post('/languages/new', [LanguagesController::class, 'create'])->name('languages.new');
-// Volunteer Experiences
-//Personal Details
+
+    // Volunteer Experiences
+    Route::get('/volunteer-experiences/add', [VolunteerExperiencesController::class, 'index'])->name('volunteer.add');
+    Route::post('/volunteer-experiences/new', [VolunteerExperiencesController::class, 'create'])->name('volunteer.new');
+
 //Reference
     Route::get('/reference/add', [ReferenceController::class, 'index'])->name('reference.add');
     Route::post('/reference/new', [ReferenceController::class, 'create'])->name('reference.new');
