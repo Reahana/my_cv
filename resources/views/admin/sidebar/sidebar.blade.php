@@ -83,7 +83,7 @@
                 <div class="collapse" id="sidebarEmail">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="{{route('employment.add')}}">Add Projects  </a>
+                            <a href="{{route('personal.add')}}">Add Personal  </a>
                         </li>
                         <li>
                             <a href="apps-email-read.html">Manage Projects </a>

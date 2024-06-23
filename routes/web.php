@@ -16,6 +16,7 @@ use App\Http\Controllers\ObjectivesController;
 use App\Http\Controllers\AwardsController;
 use App\Http\Controllers\ReferenceController;
 use App\Http\Controllers\VolunteerExperiencesController;
+use App\Http\Controllers\PersonalDetailsController;
 
 use App\Models\RoleRoute;
 
@@ -69,6 +70,8 @@ Route::middleware([ 'auth:sanctum',  config('jetstream.auth_session'), 'verified
 
 
     //Personal Details
+    Route::get('/personal/add', [PersonalDetailsController::class, 'index'])->name('personal.add');
+    Route::post('/personal/new', [PersonalDetailsController::class, 'create'])->name('personal.new');
 
 
 //    Career Objectives

@@ -7,8 +7,10 @@ use App\Models\Awards;
 use App\Models\EmploymentHistory;
 use App\Models\Language;
 use App\Models\Objective;
+use App\Models\PersonalDetails;
 use App\Models\Reference;
 use App\Models\TrainingSummary;
+use App\Models\VolunteerExperiences;
 use Illuminate\Http\Request;
 
 class CVController extends Controller
@@ -23,6 +25,8 @@ class CVController extends Controller
             'objectives'=> Objective::orderBy('id')->get(),
             'awards'=>Awards::orderBy('id')->get(),
             'references'=>Reference::orderBy('id')->get(),
+            'volunteers'=>VolunteerExperiences::orderBy('id')->get(),
+//            'personals'=>PersonalDetails::orderBy('id')->get(),
         ]);
     }
 }
